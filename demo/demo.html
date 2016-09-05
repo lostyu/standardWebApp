@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>demo</title>
+
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../src/css/demo.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="col-md-9">
+        <div id="side1" style="height: 1000px;">
+            <button class="btn btn-primary">primary</button>
+        </div>
+        <div id="side2" style="height: 1000px;">
+            <button class="btn btn-primary">primary</button>
+        </div>
+        <div id="side3" style="height: 1000px;">
+            <button class="btn btn-primary">primary</button>
+            <div style="height: 200px; background-color:#000;"></div>
+            <div id="side3-1">side3-1</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="j-sideNav">
+            <ul class="m-sideNav nav">
+                <li><a href="#side1">side1</a></li>
+                <li><a href="#side2">side2</a></li>
+                <li>
+                    <a href="#side3">side3</a>
+                    <ul>
+                        <li><a href="#side3-1">side3-1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script src="../src/js/lib/jquery-1.11.3/jquery.min.js"></script>
+
+<!-- demo -->
+<script src="../src/js/lib/bootstrap-3.3.5/js/scrollspy.js"></script>
+<script src="../src/js/lib/bootstrap-3.3.5/js/affix.js"></script>
+<script src="../src/js/demo.js"></script>
+<!-- /demo -->
+</body>
+</html>
