@@ -1,0 +1,138 @@
+.f-mt5 {
+  margin-top: 5px;
+}
+.f-mt10 {
+  margin-top: 10px;
+}
+.f-mt15 {
+  margin-top: 15px;
+}
+.f-mt20 {
+  margin-top: 20px;
+}
+.f-mt25 {
+  margin-top: 25px;
+}
+.f-mt30 {
+  margin-top: 30px;
+}
+.f-mt35 {
+  margin-top: 35px;
+}
+.f-mt40 {
+  margin-top: 40px;
+}
+.f-mt45 {
+  margin-top: 45px;
+}
+.f-mt50 {
+  margin-top: 50px;
+}
+a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+.affix {
+  position: fixed !important;
+}
+.section {
+  padding: 100px 0;
+}
+.m-header {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+}
+.m-header .logo {
+  margin: 0;
+}
+.m-header .logo a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  color: #337ab7;
+}
+.m-header .logo a:hover {
+  text-decoration: none;
+}
+.m-header .logo a:focus {
+  outline: none;
+  text-decoration: none;
+}
+.m-header .nav .active a {
+  color: #337ab7;
+}
+.m-header .nav .active a span:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.m-header .nav a {
+  padding: 25px 15px;
+  color: #555555;
+}
+.m-header .nav a:hover {
+  color: #337ab7;
+  background-color: transparent;
+}
+.m-header .nav a:hover span:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.m-header .nav a:focus {
+  background-color: transparent;
+}
+.m-header .nav a span {
+  position: relative;
+  display: block;
+  padding-bottom: 2px;
+}
+.m-header .nav a span:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #337ab7;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.m-banner {
+  height: 800px;
+  margin-top: 70px;
+  background: url(../../img/banner1.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.m-banner .content {
+  height: 800px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.m-banner .content .tit {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+.m-banner .content .info {
+  font-size: 18px;
+}
+.m-footer {
+  padding: 100px 0;
+  background-color: #222222;
+  color: #fff;
+}
+.m-listTitle h2 {
+  margin: 0 0 20px;
+  color: #337ab7;
+}
+.m-listItem .text {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+}

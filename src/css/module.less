@@ -1,0 +1,160 @@
+// ==================== S reset ==========================
+a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+.affix{
+  position: fixed !important;
+}
+// ==================== E reset ==========================
+
+
+// ==================== S common ==========================
+.section{
+  padding: 100px 0;
+}
+// ==================== E common ==========================
+
+
+// ==================== S modules ==========================
+
+// ------ S header ------
+.m-header {
+  position: absolute;
+  z-index:9;
+  left: 0;
+  top:0;
+  width:100%;
+  height:70px;
+  background-color: #fff;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, .3);
+
+  .logo {
+    margin: 0;
+
+    a {
+      display: block;
+      height: 70px;
+      line-height: 70px;
+      color: @brand-primary;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:focus {
+        outline: none;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav {
+    .active(){
+      visibility: visible;
+      transform: scaleX(1);
+    }
+
+    .active a{
+      color: @brand-primary;
+    }
+
+    .active a span:after{
+      .active();
+    }
+
+    a {
+      padding: 25px 15px;
+      color: @gray;
+
+      &:hover {
+        color: @brand-primary;
+        background-color: transparent;
+      }
+
+      &:hover span:after {
+        .active();
+      }
+
+      &:focus {
+        background-color: transparent;
+      }
+
+      span {
+        position: relative;
+        display: block;
+        padding-bottom: 2px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: @brand-primary;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+// ------ E header ------
+
+
+// ------ S banner ------
+.m-banner{
+  height: 800px;
+  margin-top:70px;
+  background: url(../../img/banner1.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  .content{
+    height:800px;
+    display: table-cell;
+    vertical-align: middle;
+
+    .tit{
+      margin:0 0 10px;
+      font-size:30px;
+    }
+    .info{
+      font-size:18px;
+    }
+  }
+}
+// ------ E banner ------
+
+
+// ------ S footer ------
+.m-footer{
+  padding: 100px 0;
+  background-color: @gray-darker;
+  color: #fff;
+}
+// ------ E footer ------
+
+
+// ------ S list ------
+.m-listTitle{
+  h2{
+    margin: 0 0 20px;
+    color: @brand-primary;
+  }
+}
+.m-listItem{
+  .pic{}
+
+  .text{
+    margin-bottom:20px;
+    padding: 10px;
+    background-color: #fff;
+  }
+}
+// ------ E list ------
+
+// ==================== E modules ==========================

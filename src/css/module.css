@@ -1,0 +1,32 @@
+a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+.m-header {
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+}
+.m-header .logo {
+  margin: 0;
+}
+.m-header .logo a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  color: #000;
+}
+.m-header .logo a:hover {
+  text-decoration: none;
+}
+.m-header .logo a:focus {
+  outline: none;
+  text-decoration: none;
+}
+.m-header .nav a {
+  padding: 25px 15px;
+}
+.m-header .nav a:hover {
+  background-color: transparent;
+}
+.m-header .nav a:focus {
+  background-color: transparent;
+}
